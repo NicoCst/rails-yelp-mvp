@@ -1,0 +1,10 @@
+<%= @restaurant.name %><br>
+<%= @restaurant.address %><br>
+<%= @restaurant.phone_number %><br>
+<%= @restaurant.category %><br>
+<%= @restaurant.reviews.each do |review| %>
+  <%= review.rating %>
+  <%= review.content %>
+  <%= review.user.email %>
+<% end %>
+<%= link_to @review.new, review %>
