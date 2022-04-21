@@ -7,4 +7,4 @@
   <%= review.content %>
   <%= review.user.email %>
 <% end %>
-<%= link_to @review.new, review %>
+<%= link_to 'Create a review', new_restaurant_review_path(@restaurant) %>
